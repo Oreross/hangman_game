@@ -37,11 +37,11 @@ class Hangman:
 
     def check_win(self):
         """Check if player has won or lose"""
-        if "".join(self.word) == "".join(self.word2) and self.errors < self.attempts:
-            print(f"You won! Word: {''.join(self.word)}")
+        if self.word == "".join(self.word2):
+            print(f"You won! Word: {self.word}")
             self.play_again()
         elif self.errors == self.attempts:
-            print(f"You lose!\nThe word was: {''.join(self.word)}")
+            print(f"You lose!\nThe word was: {self.word}")
             self.play_again()
 
     def play_again(self):
