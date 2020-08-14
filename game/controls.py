@@ -2,12 +2,12 @@ from random import choice
 from sys import exit
 
 
-def generate_random_words(words: list):
+def generate_random_words(words: list) -> str:
     """Functions that pick a random element in a list"""
     return choice(words).lower()
 
 
-def read_words():
+def read_words() -> list:
     """Function that read the words from a file and save them on a list"""
     filename = 'game/words.txt'
     try:
