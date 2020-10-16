@@ -13,7 +13,7 @@ class Hangman:
         self.word = generate_random_words(read_words())
         self.word2 = [" " if c == " " else "_" for c in self.word]
 
-    def draw_scheme_world(self) -> None:
+    def draw_word_scheme(self) -> None:
         """Draw the word scheme"""
         print("".join(self.word2))
 
